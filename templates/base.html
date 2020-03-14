@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inter|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='img/logo.ico') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>CovidMap</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="buttons">
+            <a href="{{ url_for('index') }}" class="navbutton">Dashboard</a>
+        </div>
+        <h1><a href="{{ url_for('index') }}" class="navlink">CovidMap</a></h1>
+        <div class="buttons">
+            <a href="{{ url_for('about') }}" class="navbutton">About</a>
+        </div>
+    </div>
+    <div class="container">
+        <!--Code here-->
+    </div>
+    <div class="footer">
+        <p>Made by CovidMap team</p>
+        <p>
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> | All rights reserved
+        </p>
+    </div>
+</body>
+
+</html>
